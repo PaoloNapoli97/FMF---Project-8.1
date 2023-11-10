@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DmGPAybrdDdoPqnBAZjuSn2iInfbI6rbWtNrg5e13EnHgKNW1ChyAj4wfXC4UlP7J1oAWXVa+q8YLTmWryRzEQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\FMF-Guest\\Desktop\\Project 8.1 Back-end\\FileManager\\FileManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FMF-Guest\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -2,7 +2,7 @@ namespace UserModel
 {
     public class User
     {
-        private string? _name { get; set; }
+        public string? Name { get; set; }
         private string? _password { get; set; }
         public string? Id { get; set; }
         private string? _challenge = null;
@@ -14,10 +14,11 @@ namespace UserModel
             Admin,
             LabAdministrator
         }
-        public User(string name, string password)
+        public User(string Id, string Name, string password)
         {
-            _name = name;
-            _password = password;
+            this.Id = Id;
+            this.Name = Name;
+            Password = password;
         }
 
         private bool ValidatePassword(string? paswd)
@@ -64,31 +65,40 @@ namespace UserModel
             return _challenge == CalculateChallenge();
         }
 
-        internal string? CreateToken(){
+        internal string? CreateToken()
+        {
             _token = $"token:<{Id}>";
             return _token;
         }
 
-        internal bool VerifyToken(string? token){
+        internal bool VerifyToken(string? token)
+        {
             return token == _token;
         }
 
-        public class Credentials 
-        {
-            private List<User> _users = null;
-
-            public User GetUser(User user) {
-                return _users.Find(x => x == user);
-            }
-
-            internal bool GetUserByToken(string? token){
-                var user = _users.Find(x => x.VerifyToken(token));
-                return user != null;
-            }
-
-            public List<User> GetAll() {
-                return _users;
-            }
-        }
     }
+    // public class Credentials
+    // {
+    //     private List<User> _users = null;
+
+    //     public User GetUser(User user)
+    //     {
+    //         return _users.Find(x => x == user);
+    //     }
+
+    //     public User GetUserId(string? Id){
+    //         return _users.Find(x => x.Id == Id);
+    //     }
+
+    //     internal bool GetUserByToken(string? token)
+    //     {
+    //         var user = _users.Find(x => x.VerifyToken(token));
+    //         return user != null;
+    //     }
+
+    //     public List<User> GetAll()
+    //     {
+    //         return _users;
+    //     }
+    // }
 }

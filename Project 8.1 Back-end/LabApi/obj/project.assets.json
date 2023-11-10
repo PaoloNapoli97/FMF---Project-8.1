@@ -107,16 +107,6 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
-      },
-      "FileManager/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/FileManager.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FileManager.dll": {}
-        }
       }
     }
   },
@@ -470,49 +460,47 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
-    },
-    "FileManager/1.0.0": {
-      "type": "project",
-      "path": "../FileManager/FileManager.csproj",
-      "msbuildProject": "../FileManager/FileManager.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "FileManager >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.11",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Paolo\\.nuget\\packages\\": {}
+    "C:\\Users\\FMF-Guest\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paolo\\Desktop\\Nuova cartella (4)\\Project 8.1 Back-end\\LabApi\\LabApi.csproj",
+      "projectUniqueName": "C:\\Users\\FMF-Guest\\Desktop\\Project 8.1 Back-end\\LabApi\\LabApi.csproj",
       "projectName": "LabApi",
-      "projectPath": "C:\\Users\\Paolo\\Desktop\\Nuova cartella (4)\\Project 8.1 Back-end\\LabApi\\LabApi.csproj",
-      "packagesPath": "C:\\Users\\Paolo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paolo\\Desktop\\Nuova cartella (4)\\Project 8.1 Back-end\\LabApi\\obj\\",
+      "projectPath": "C:\\Users\\FMF-Guest\\Desktop\\Project 8.1 Back-end\\LabApi\\LabApi.csproj",
+      "packagesPath": "C:\\Users\\FMF-Guest\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\FMF-Guest\\Desktop\\Project 8.1 Back-end\\LabApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Paolo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\FMF-Guest\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "C:\\Users\\Paolo\\Desktop\\Nuova cartella (4)\\Project 8.1 Back-end\\FileManager\\FileManager.csproj": {
-              "projectPath": "C:\\Users\\Paolo\\Desktop\\Nuova cartella (4)\\Project 8.1 Back-end\\FileManager\\FileManager.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -553,7 +541,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
